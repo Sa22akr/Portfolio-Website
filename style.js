@@ -2,7 +2,7 @@
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".nav");
 
-if (menuBtn) {
+if (menuBtn && nav) {
   menuBtn.addEventListener("click", () => {
     nav.classList.toggle("open");
   });
@@ -38,7 +38,7 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 
 
-// PROJECT CARD HOVER (adds small lift)
+// PROJECT CARD HOVER
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
