@@ -231,12 +231,13 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
+
+
+/* CENTER HERO TEXT ON MOBILE */
+@media (max-width: 768px) {
+  .hero-text {
     text-align: center;
-    gap: 30px;
+    align-items: center;
   }
 }
-
 
