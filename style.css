@@ -151,6 +151,7 @@ body::after {
   align-items: center;
 }
 
+
 .hero span {
   color: #4ee1a0;
 }
@@ -266,3 +267,11 @@ button {
   }
 }
 
+/* MOBILE: center hero buttons */
+@media (max-width: 900px) {
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
