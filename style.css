@@ -40,6 +40,22 @@
   text-decoration: none;
   color: white;
 }
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.nav-left a {
+  font-size: 20px;
+}
+
 
 .nav-right {
   display: flex;
