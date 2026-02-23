@@ -152,6 +152,34 @@ body::after {
   color: #4ee1a0;
 }
 
+/* ===============================
+   PROJECT SLIDESHOW
+================================= */
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 300px; /* choose ONE height */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+
+.hero-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   object-fit: contain;  /* shows full image */
+  background: #ffffff;  
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+}
+
 /* RIGHT SIDE HERO */
 .hero-right {
   display: flex;
@@ -240,7 +268,7 @@ body::after {
 }
 
 .experience-card h3 {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
   font-size: 22px;
   color: #4ee1a0;
 }
@@ -269,6 +297,10 @@ body::after {
 .card img {
   width: 100%;
   border-radius: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
 }
 
 /* CONTACT */
@@ -319,6 +351,36 @@ button {
     gap: 15px;
   }
 }
+
+
+/* ===============================
+   PROJECT BUTTONS
+================================= */
+
+.project-links {
+  display: flex;
+  justify-content: flex-start; /* aligns left */
+  gap: 20px;
+  width: 100%;
+}
+
+.project-btn {
+  padding: 12px 30px;
+  border-radius: 40px;
+  border: 1px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #4ee1a0;
+  color: black;
+  border-color: #4ee1a0;
+  transform: translateY(-3px);
+}
+
 
 /* ===============================
    FOOTER
