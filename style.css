@@ -275,3 +275,15 @@ button {
     gap: 15px;
   }
 }
+
+/* ===============================
+   FOOTER
+================================= */
+.footer {
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #ccc;
+  border-top: 1px solid #222;
+}
