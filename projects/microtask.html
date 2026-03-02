@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialMint | Case Study</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="case-body">
+
+<header class="case-header">
+  <a href="../index.html" class="back-link">← Back to Portfolio</a>
+</header>
+
+<!-- HERO -->
+<section class="case-hero">
+  <h1>SocialMint – Social Engagement & Commission Platform</h1>
+  <p class="case-tagline">
+    A structured web platform enabling users to earn through verified social
+    engagement tasks and product resale commissions, built with secure
+    authentication and validation logic.
+  </p>
+
+  <div class="case-badges">
+    <span>Full-Stack</span>
+    <span>Django</span>
+    <span>Authentication</span>
+    <span>Validation Logic</span>
+    <span>Relational Database</span>
+  </div>
+</section>
+
+<div class="case-container">
+
+  <!-- OVERVIEW -->
+  <section class="case-card">
+    <h2>Platform Overview</h2>
+    <p>
+      SocialMint operates as a dual-mode earning platform. Users can either
+      complete verified social engagement tasks or resell listed products
+      for commission-based income. The system enforces structured validation
+      logic to ensure fairness, prevent duplicate submissions, and maintain
+      database integrity.
+    </p>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="case-card">
+    <h2>The Problem</h2>
+    <p>
+      Many online earning platforms suffer from weak validation systems,
+      duplicate task submissions, and insecure authentication. These
+      weaknesses compromise fairness and allow system abuse.
+    </p>
+    <p>
+      SocialMint was designed to eliminate these structural flaws by
+      prioritising backend validation and relational integrity.
+    </p>
+  </section>
+
+  <!-- CORE FEATURES -->
+  <section class="case-card">
+    <h2>Core Features</h2>
+    <ul>
+      <li>Dual earning modes (Social Tasks & Product Resale)</li>
+      <li>Secure user authentication system</li>
+      <li>Server-side task validation</li>
+      <li>Duplicate submission prevention</li>
+      <li>Commission tracking structure</li>
+      <li>Admin-controlled task management</li>
+    </ul>
+  </section>
+
+  <!-- ROLE -->
+  <section class="case-card">
+    <h2>My Role</h2>
+    <p>
+      Independently designed and developed the full-stack architecture,
+      implementing authentication systems, database relationships,
+      frontend UI structure, and backend validation logic.
+    </p>
+  </section>
+
+  <!-- FRONTEND -->
+  <section class="case-card">
+    <h2>Frontend Engineering</h2>
+    <ul>
+      <li>Responsive dashboard layout</li>
+      <li>Structured earning pathway selection UI</li>
+      <li>Semantic HTML5 implementation</li>
+      <li>Accessible form validation feedback</li>
+      <li>Clear CTA-based user flow design</li>
+    </ul>
+  </section>
+
+  <!-- BACKEND -->
+  <section class="case-card">
+    <h2>Backend Engineering</h2>
+    <ul>
+      <li>Django ORM relational modelling</li>
+      <li>User authentication & session handling</li>
+      <li>Server-side submission validation</li>
+      <li>One-user submission enforcement logic</li>
+      <li>Timestamp tracking & structured earnings allocation</li>
+      <li>CSRF protection implementation</li>
+    </ul>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="case-card">
+    <h2>Architecture Decisions</h2>
+    <p>
+      Django was selected for its rapid development capabilities and
+      built-in security features. A relational database structure was used
+      to maintain strict user-task relationships and prevent duplicate
+      reward allocation.
+    </p>
+    <p>
+      Validation logic was enforced server-side to prevent bypassing
+      restrictions through client-side manipulation.
+    </p>
+  </section>
+
+  <!-- CHALLENGES -->
+  <section class="case-card">
+    <h2>Challenges & Solutions</h2>
+    <p>
+      Preventing duplicate or fraudulent submissions required enforcing
+      strict database relationships tied to authenticated user IDs.
+      This was solved through relational constraints and backend validation
+      checks before reward allocation.
+    </p>
+    <p>
+      Structuring two earning modes within a single system required
+      modular model design while maintaining clear separation of logic.
+    </p>
+  </section>
+
+  <!-- SECURITY -->
+  <section class="case-card">
+    <h2>Security Considerations</h2>
+    <ul>
+      <li>Authenticated-only task submissions</li>
+      <li>CSRF protection middleware</li>
+      <li>Server-side validation enforcement</li>
+      <li>Controlled admin access to task creation</li>
+    </ul>
+  </section>
+
+  <!-- FUTURE -->
+  <section class="case-card">
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Migration to PostgreSQL</li>
+      <li>Wallet system with transaction history</li>
+      <li>Referral & reward bonus logic</li>
+      <li>JWT-based API expansion</li>
+      <li>Rate limiting for abuse prevention</li>
+      <li>Payment gateway integration</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer class="case-footer">
+  <p>© <span id="year"></span> Samson Osarumwense Adam</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

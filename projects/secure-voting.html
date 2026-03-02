@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Voting System | Case Study</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="case-body">
+
+<header class="case-header">
+  <a href="../index.html" class="back-link">← Back to Portfolio</a>
+</header>
+
+<!-- HERO -->
+<section class="case-hero">
+  <h1>Django Secure Voting System</h1>
+  <p class="case-tagline">
+    A structured voting platform designed to prevent duplicate votes,
+    enforce fairness logic, and maintain relational data integrity.
+  </p>
+
+  <div class="case-badges">
+    <span>Backend-Focused</span>
+    <span>Django</span>
+    <span>Relational Database</span>
+    <span>Validation Logic</span>
+    <span>Security Controls</span>
+  </div>
+</section>
+
+<div class="case-container">
+
+  <!-- OVERVIEW -->
+  <section class="case-card">
+    <h2>Project Overview</h2>
+    <p>
+      This project was developed to simulate a secure digital voting
+      environment where system integrity and fairness were prioritised.
+      The objective was to eliminate common vulnerabilities such as
+      duplicate voting, self-voting, and session manipulation.
+    </p>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="case-card">
+    <h2>The Problem</h2>
+    <p>
+      Many digital voting implementations rely heavily on frontend
+      restrictions, making them vulnerable to manipulation. Without
+      structured relational modelling and server-side validation,
+      users can exploit logical loopholes.
+    </p>
+    <p>
+      The challenge was to enforce strict voting rules at the database
+      and backend level.
+    </p>
+  </section>
+
+  <!-- CORE FEATURES -->
+  <section class="case-card">
+    <h2>Core Features</h2>
+    <ul>
+      <li>One-user-one-vote enforcement</li>
+      <li>Candidate self-vote prevention logic</li>
+      <li>Relational database modelling</li>
+      <li>Timestamp tracking for submissions</li>
+      <li>Admin-controlled candidate management</li>
+      <li>Session categorisation structure</li>
+    </ul>
+  </section>
+
+  <!-- ROLE -->
+  <section class="case-card">
+    <h2>My Role</h2>
+    <p>
+      Designed and implemented the backend architecture independently,
+      focusing on relational modelling, validation logic enforcement,
+      and system fairness.
+    </p>
+  </section>
+
+  <!-- BACKEND ENGINEERING -->
+  <section class="case-card">
+    <h2>Backend Engineering</h2>
+    <ul>
+      <li>Django ORM relational modelling</li>
+      <li>OneToOneField constraint to prevent duplicate votes</li>
+      <li>ForeignKey relationships for candidate integrity</li>
+      <li>Server-side validation enforcement</li>
+      <li>Authentication-based vote restrictions</li>
+      <li>CSRF protection implementation</li>
+    </ul>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="case-card">
+    <h2>Architecture Decisions</h2>
+    <p>
+      Django was chosen for its built-in authentication framework
+      and robust ORM capabilities. Relational constraints were
+      prioritised to ensure voting integrity at the database level,
+      rather than relying solely on frontend restrictions.
+    </p>
+    <p>
+      A OneToOneField relationship was used to guarantee that each
+      authenticated user could only submit one vote.
+    </p>
+  </section>
+
+  <!-- SECURITY -->
+  <section class="case-card">
+    <h2>Security Considerations</h2>
+    <ul>
+      <li>Authenticated-only vote submission</li>
+      <li>Prevention of self-voting logic</li>
+      <li>Duplicate vote restriction</li>
+      <li>CSRF middleware protection</li>
+      <li>Server-side validation enforcement</li>
+    </ul>
+  </section>
+
+  <!-- CHALLENGES -->
+  <section class="case-card">
+    <h2>Challenges & Solutions</h2>
+    <p>
+      Preventing both duplicate voting and candidate self-voting
+      required layered validation. This was achieved through a
+      combination of relational constraints and explicit backend
+      logic checks before database commit.
+    </p>
+    <p>
+      Ensuring fairness while maintaining scalability required
+      careful model structuring and separation of concerns.
+    </p>
+  </section>
+
+  <!-- FUTURE -->
+  <section class="case-card">
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Migration to PostgreSQL for production scaling</li>
+      <li>Audit logging system</li>
+      <li>Role-based permission expansion</li>
+      <li>REST API integration</li>
+      <li>Rate limiting for submission protection</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer class="case-footer">
+  <p>© <span id="year"></span> Samson Osarumwense Adam</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

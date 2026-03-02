@@ -383,6 +383,87 @@ button {
 
 
 /* ===============================
+   CASE STUDY
+================================= */
+
+
+.case-body {
+  background: linear-gradient(135deg, #0b0f17, #111827);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.case-header {
+  padding: 2rem 10%;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #5ef2b6;
+  font-weight: 600;
+}
+
+.case-hero {
+  padding: 2rem 10% 4rem 10%;
+}
+
+.case-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.case-tagline {
+  max-width: 700px;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.case-badges span {
+  display: inline-block;
+  background: rgba(94, 242, 182, 0.1);
+  border: 1px solid #5ef2b6;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.case-container {
+  padding: 0 10% 4rem 10%;
+}
+
+.case-card {
+  background: #141a23;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-card h2 {
+  margin-bottom: 1rem;
+  color: #5ef2b6;
+}
+
+.case-card ul {
+  padding-left: 1.2rem;
+}
+
+.case-footer {
+  text-align: center;
+  padding: 3rem 0;
+  opacity: 0.6;
+}
+
+
+
+/* ===============================
    FOOTER
 ================================= */
 .footer {
