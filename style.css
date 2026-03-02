@@ -460,8 +460,47 @@ button {
   padding: 3rem 0;
   opacity: 0.6;
 }
+@media (max-width: 768px) {
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
+  .project-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-slider img {
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-summary {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .project-meta span {
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+}
 
 /* ===============================
    FOOTER
